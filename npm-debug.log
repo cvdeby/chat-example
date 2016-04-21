@@ -1,0 +1,110 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node',
+1 verbose cli   '/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.6
+3 info using node@v4.4.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/ubuntu/workspace',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+10 info lifecycle @cvdeby/chat-example@0.0.1~prepublish: @cvdeby/chat-example@0.0.1
+11 silly lifecycle @cvdeby/chat-example@0.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package.tgz',
+12 verbose tar pack   '/home/ubuntu/workspace' ]
+13 verbose tarball /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package.tgz
+14 verbose folder /home/ubuntu/workspace
+15 verbose addLocalTarball adding from inside cache /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package.tgz
+16 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd @cvdeby/chat-example@0.0.1
+18 verbose afterAdd /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /home/ubuntu/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package/package.json written
+21 silly publish { name: '@cvdeby/chat-example',
+21 silly publish   version: '0.0.1',
+21 silly publish   description: 'A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.',
+21 silly publish   main: 'server.js',
+21 silly publish   repository: { type: 'git', url: 'chat-example' },
+21 silly publish   author: { name: 'Mostafa Eweda', email: 'mo.eweda@gmail.com' },
+21 silly publish   dependencies:
+21 silly publish    { async: '~0.2.8',
+21 silly publish      express: '~3.2.4',
+21 silly publish      'socket.io': '~0.9.14',
+21 silly publish      '@linclark/pkg': '~1.0.2' },
+21 silly publish   scripts:
+21 silly publish    { start: 'node server.js',
+21 silly publish      test: 'node test.js',
+21 silly publish      preversion: 'npm test',
+21 silly publish      version: 'npm run build && git add -A dist',
+21 silly publish      postversion: 'git push && git push --tags && rm -rf build/temp' },
+21 silly publish   devDependencies: {},
+21 silly publish   keywords: [ 'chat', 'example', 'cvdeby', 'freecodecamp' ],
+21 silly publish   license: 'ISC',
+21 silly publish   readme: '\n     ,-----.,--.                  ,--. ,---.   ,--.,------.  ,------.\n    \'  .--./|  | ,---. ,--.,--. ,-|  || o   \\  |  ||  .-.  \\ |  .---\'\n    |  |    |  || .-. ||  ||  |\' .-. |`..\'  |  |  ||  |  \\  :|  `--, \n    \'  \'--\'\\|  |\' \'-\' \'\'  \'\'  \'\\ `-\' | .\'  /   |  ||  \'--\'  /|  `---.\n     `-----\'`--\' `---\'  `----\'  `---\'  `--\'    `--\'`-------\' `------\'\n    ----------------------------------------------------------------- \n\n\nWelcome to your Node.js project on Cloud9 IDE!\n\nThis chat example showcases how to use `socket.io` with a static `express` server.\n\n## Running the server\n\n1) Open `server.js` and start the app by clicking on the "Run" button in the top menu.\n\n2) Alternatively you can launch the app from the Terminal:\n\n    $ node server.js\n\nOnce the server is running, open the project in the shape of \'https://projectname-username.c9.io/\'. As you enter your name, watch the Users list (on the left) update. Once you press Enter or Send, the message is shared with all connected clients.\n# chat-example\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'e918b19c7923cb03d203b49a28c69d6020180051',
+21 silly publish   _id: '@cvdeby/chat-example@0.0.1',
+21 silly publish   _shasum: 'fedbc6094e2483e7bb5c3d243371e64eca0f8e37',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name @cvdeby/chat-example
+24 silly mapToRegistry scope (from package name) @cvdeby
+25 verbose mapToRegistry no registry URL found in name for scope @cvdeby
+26 silly mapToRegistry using default registry
+27 silly mapToRegistry registry http://localhost:15443/
+28 silly mapToRegistry data Result {
+28 silly mapToRegistry   raw: '@cvdeby/chat-example',
+28 silly mapToRegistry   scope: '@cvdeby',
+28 silly mapToRegistry   name: '@cvdeby/chat-example',
+28 silly mapToRegistry   rawSpec: '',
+28 silly mapToRegistry   spec: 'latest',
+28 silly mapToRegistry   type: 'tag' }
+29 silly mapToRegistry uri http://localhost:15443/@cvdeby%2fchat-example
+30 verbose publish registryBase http://localhost:15443/
+31 silly publish uploading /home/ubuntu/.npm/@cvdeby/chat-example/0.0.1/package.tgz
+32 verbose request uri http://localhost:15443/@cvdeby%2fchat-example
+33 verbose request sending authorization for write operation
+34 info attempt registry request try #1 at 9:18:25 AM
+35 verbose request id 93b91087475233ca
+36 http request PUT http://localhost:15443/@cvdeby%2fchat-example
+37 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+38 info attempt registry request try #2 at 9:18:35 AM
+39 http request PUT http://localhost:15443/@cvdeby%2fchat-example
+40 info retry will retry, error on last attempt: Error: connect ECONNREFUSED 127.0.0.1:15443
+41 info attempt registry request try #3 at 9:19:36 AM
+42 http request PUT http://localhost:15443/@cvdeby%2fchat-example
+43 verbose request invalidating /home/ubuntu/.npm/localhost_15443/_40cvdeby_252fchat-example on PUT
+44 error publish Failed PUT undefined
+45 verbose stack Error: connect ECONNREFUSED 127.0.0.1:15443
+45 verbose stack     at Object.exports._errnoException (util.js:870:11)
+45 verbose stack     at exports._exceptionWithHostPort (util.js:893:20)
+45 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+46 verbose cwd /home/ubuntu/workspace
+47 error Linux 4.2.0-c9
+48 error argv "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/node" "/home/ubuntu/.nvm/versions/node/v4.4.0/bin/npm" "publish"
+49 error node v4.4.0
+50 error npm  v3.8.6
+51 error code ECONNREFUSED
+52 error errno ECONNREFUSED
+53 error syscall connect
+54 error Error: connect ECONNREFUSED 127.0.0.1:15443
+54 error     at Object.exports._errnoException (util.js:870:11)
+54 error     at exports._exceptionWithHostPort (util.js:893:20)
+54 error     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1057:14)
+54 error  { [Error: connect ECONNREFUSED 127.0.0.1:15443]
+54 error   code: 'ECONNREFUSED',
+54 error   errno: 'ECONNREFUSED',
+54 error   syscall: 'connect',
+54 error   address: '127.0.0.1',
+54 error   port: 15443 }
+55 error If you are behind a proxy, please make sure that the
+55 error 'proxy' config is set properly.  See: 'npm help config'
+56 verbose exit [ 1, true ]

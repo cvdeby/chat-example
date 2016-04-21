@@ -1,6 +1,6 @@
 {
   "name": "@cvdeby/chat-example",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A chat example to showcase how to use `socket.io` with a static `express` server with `async` for control flow.",
   "main": "server.js",
   "repository": {
@@ -15,7 +15,11 @@
     "@linclark/pkg": "~1.0.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "node test.js",
+    "preversion": "npm test",
+    "version": "npm run build && git add -A dist",
+    "postversion": "git push && git push --tags && rm -rf build/temp"
   },
   "devDependencies": {},
   "keywords": [
